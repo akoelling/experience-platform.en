@@ -1,44 +1,44 @@
-[[Overview]{.underline}](#overview)
+[Overview](#overview)
 
-[[Use Cases]{.underline}](#use-cases)
+[Use Cases](#use-cases)
 
-> [[The Magnite-Streaming Daily
-> Destination]{.underline}](#the-magnite-streaming-daily-destination)
+> [The Magnite-Streaming Daily
+> Destination](#the-magnite-streaming-daily-destination)
 > 
-> [[The Magnite-Streaming Real-Time
-> Destination]{.underline}](#the-magnite-streaming-real-time-destination)
+> [The Magnite-Streaming Real-Time
+> Destination](#the-magnite-streaming-real-time-destination)
 
-[[Prerequisites]{.underline}](#prerequisites)
+[Prerequisites](#prerequisites)
 
-[[Supported Identities]{.underline}](#supported-identities)
+[Supported Identities](#supported-identities)
 
-[[Setting Up The
-Destinations]{.underline}](#setting-up-the-destinations)
+[Setting Up The
+Destinations](#setting-up-the-destinations)
 
-> [[Authenticate to
-> destination]{.underline}](#authenticate-to-destination)
+> [Authenticate to
+> destination](#authenticate-to-destination)
 > 
-> [[Fill in destination
-> details]{.underline}](#fill-in-destination-details)
+> [Fill in destination
+> details](#fill-in-destination-details)
 > 
-> [[Activate audiences to this
-> destination]{.underline}](#activate-audiences-to-the-destination)
+> [Activate audiences to this
+> destination](#activate-audiences-to-the-destination)
 > 
-> [[Step 1: Select your new Destination and click
-> Next.]{.underline}](#step-1-select-your-new-destination-and-click-next.)
+> [Step 1: Select your new Destination and click
+> Next.](#step-1-select-your-new-destination-and-click-next.)
 > 
-> [[Step 2: Select any audiences you want to activate, then click
-> Next.]{.underline}](#step-2-select-any-audiences-you-want-to-activate-then-click-next.)
+> [Step 2: Select any audiences you want to activate, then click
+> Next.](#step-2-select-any-audiences-you-want-to-activate-then-click-next.)
 > 
-> [[Step 3: The next step is mapping source identifiers to the Magnite
+> [Step 3: The next step is mapping source identifiers to the Magnite
 > device_id
-> identifier.]{.underline}](#step-3-the-next-step-is-mapping-source-identifiers-to-the-magnite-device_id-identifier.)
+> identifier.](#step-3-the-next-step-is-mapping-source-identifiers-to-the-magnite-device_id-identifier.)
 > 
-> [[Step 4: Confirm the Destination activation
-> Configuration.]{.underline}](#step-4-confirm-the-destination-activation-configuration.)
+> [Step 4: Confirm the Destination activation
+> Configuration.](#step-4-confirm-the-destination-activation-configuration.)
 
-[[Exported data / Validate data
-export]{.underline}](#exported-data-validate-data-export)
+[Exported data / Validate data
+export](#exported-data-validate-data-export)
 
 ## Overview
 
@@ -142,8 +142,7 @@ the destination.
 To authenticate to the destination, fill in the required fields and
 select Connect to the destination.
 
-![](media/image8.png){width="5.385416666666667in"
-height="2.8020833333333335in"}
+![destination configuration auth fields unfilled](../../assets/catalog/advertising/magnite/destination-config-auth-unfilled.png)
 
 If you have an existing account, you can locate it by changing the
 Account type option to Existing account.
@@ -160,8 +159,7 @@ that the field is required. You can then proceed by clicking Next.
 > Description: A description that will help you identify this
 > destination in the future.
 
-![](media/image7.png){width="5.666666666666667in"
-height="2.6325973315835522in"}
+![destination configuration auth fields filled](../../assets/catalog/advertising/magnite/destination-config-auth-filled.png)
 
 **Note:** A new destination is required for each if you plan to send
 multiple ID types using the daily, file-based destination. Please
@@ -172,7 +170,7 @@ Export is generally used for the Magnite destinations.
 
 Once done, click the Create button.
 
-![](media/image6.png){width="5.71875in" height="2.8645833333333335in"}
+![Optional governance policy and enforcement actions](../../assets/catalog/advertising/magnite/destination-config-grouping-policy.png)
 
 ### 
 
@@ -186,15 +184,15 @@ needed.
 
 #### Step 1: Select your new Destination and click Next.
 
-![](media/image2.png){width="5.75in" height="2.4375in"}
+![select the destination to activate audiences too](assets/catalog/advertising/magnite/destination-active-audience-select-destination.png)
 
 #### Step 2: Select any audiences you want to activate, then click Next.
 
-![](media/image5.png){width="5.75in" height="1.25in"}
+![select the audiences to activate](../../assets/catalog/advertising/magnite/destination-active-audience-select-audience.png)
 
 #### Step 3: The next step is mapping source identifiers to the Magnite device_id identifier.
 
-![](media/image1.png){width="5.75in" height="2.8583650481189853in"}
+![map desired data fields to the device_id field](../../assets/catalog/advertising/magnite/destination-active-audience-field-mapping.png)
 
 **Real-time Destination Notes**:
 
@@ -215,7 +213,7 @@ In this example using the real-time destination, we're mapping any rows
 that contain a generic deviceId source identifier to the Magnite
 device_id target field. When you\'re done, click Next.
 
-![](media/image4.png){width="5.760416666666667in" height="1.5625in"}
+![Be sure to set mapping ids to all activated audiences, or set NONE if no mapping id is present](../../assets/catalog/advertising/magnite/destination-realtime-active-audience-mappingid.png)
 
 You must now configure a Start date (mandatory), End date (optional),
 and a Mapping ID for each audience.
@@ -243,8 +241,7 @@ Once these configurations are applied, click Next.
 
 #### Step 4: Confirm the Destination activation Configuration.
 
-![](media/image3.png){width="5.770833333333333in"
-height="2.8854166666666665in"}
+![](../../assets/catalog/advertising/magnite/destination-active-audience-review.png)
 
 In this step, confirm the Destination activation configuration and click
 Finish.
