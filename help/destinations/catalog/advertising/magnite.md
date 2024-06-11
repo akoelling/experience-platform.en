@@ -24,18 +24,18 @@ Destinations](#setting-up-the-destinations)
 > [Activate audiences to this
 > destination](#activate-audiences-to-the-destination)
 > 
-> [Step 1: Select your new Destination and click
-> Next.](#step-1-select-your-new-destination-and-click-next.)
-> 
-> [Step 2: Select any audiences you want to activate, then click
-> Next.](#step-2-select-any-audiences-you-want-to-activate-then-click-next.)
-> 
-> [Step 3: The next step is mapping source identifiers to the Magnite
-> device_id
-> identifier.](#step-3-the-next-step-is-mapping-source-identifiers-to-the-magnite-device_id-identifier.)
-> 
-> [Step 4: Confirm the Destination activation
-> Configuration.](#step-4-confirm-the-destination-activation-configuration.)
+> > [Step 1: Select your new Destination and click
+> > Next.](#step-1-select-your-new-destination-and-click-next.)
+> > 
+> > [Step 2: Select any audiences you want to activate, then click
+> > Next.](#step-2-select-any-audiences-you-want-to-activate-then-click-next.)
+> > 
+> > [Step 3: The next step is mapping source identifiers to the Magnite
+> > device_id
+> > identifier.](#step-3-the-next-step-is-mapping-source-identifiers-to-the-magnite-device_id-identifier.)
+> > 
+> > [Step 4: Confirm the Destination activation
+> >  Configuration.](#step-4-confirm-the-destination-activation-configuration.)
 
 [Exported data / Validate data
 export](#exported-data-validate-data-export)
