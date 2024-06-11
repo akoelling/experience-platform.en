@@ -237,33 +237,12 @@ have been created and uploaded correctly using the following steps:
 
 **Real-time Destination**
 
-- The real-time destination system will attempt to send the events
-  
-  > with a p95 of \<10 mins after a Profile segmentation/Update event.
-  > This means that 95% of the time, profile segment updates will be
-  > delivered to Magnite Streaming in under 10 min. The actual receipt
-  > and processing of the events within Magnite Streaming depends on
-  > the shared data volume.
+- The real-time destination system will attempt to send the events with a p95 of \<10 mins after a Profile segmentation/Update event. This means that 95% of the time, profile segment updates will be delivered to Magnite Streaming in under 10 min. The actual receipt and processing of the events within Magnite Streaming depends on the shared data volume.
 
-- Post-ingest, segments are expected to appear in Magnite Streaming
+- Post-ingest, segments are expected to appear in Magnite Streaming within a few minutes and can be applied to a deal. You can confirm this by looking up the segment ID that was shared during the activation steps in the Adobe Experience Platform.
   
-  > within a few minutes and can be applied to a deal. You can confirm
-  > this by looking up the segment ID that was shared during the
-  > activation steps in the Adobe Experience Platform.
-  
-  - **Note:** Audiences shared with Magnite Streaming using the
-    
-    > real-time destination will also need to be shared using the
-    > Magnite Streaming Daily destination. When configured
-    > correctly, segment names in the Magnite Streaming UI are
-    > updated to reflect those used in the Adobe Experience Platform
-    > post-daily update.
+  - **Note:** Audiences shared with Magnite Streaming using the  real-time destination will also need to be shared using the Magnite Streaming Daily destination. When configured correctly, segment names in the Magnite Streaming UI are updated to reflect those used in the Adobe Experience Platform post-daily update.
 
 **Daily Destination**
 
-- The daily destination delivers audience files to Magnite at a daily
-  
-  > cadence. Post daily ingest, segments are expected to appear in
-  > Magnite Streaming and can be applied to a deal. You can confirm
-  > this by looking up the segment ID or segment name that was shared
-  > during the activation steps in the Adobe Experience Platform.
+- The daily destination delivers audience files to Magnite at a daily cadence. Post daily ingest, segments are expected to appear in Magnite Streaming and can be applied to a deal. You can confirm this by looking up the segment ID or segment name that was shared during the activation steps in the Adobe Experience Platform.
