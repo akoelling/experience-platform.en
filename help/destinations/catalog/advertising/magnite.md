@@ -103,29 +103,11 @@ Magnite Streaming destinations can receive the following identifier
 sources from the Adobe CDP. Please note all of the following identity
 sources can map to the Magnite device_id target identifier:
 
-  -----------------------------------------------------------------------
-
-  Identity     Description                         Consideration
-  Source                                           
-
-  ------------ ----------------------------------- ----------------------
-
-  TV Device    Identifiers for advertising across  These IDs may be
-  IDs          Over-the-top (OTT)/ Connected TV    referenced as a custom
-               (CTV) devices and platforms.        identity source for
-                                                   the user.
-
-  MAIDs        Google Advertising ID (GAID) or     These IDs are
-               Apple ID for Advertisers (IDFA).    generally captured in
-                                                   the GAID and IDFA
-                                                   source namespaces for
-                                                   the user.
-
-  Publisher    This is generally a first-party,    This may be referenced
-  Provided     cross-device identifier that is     as a custom identity
-  User IDs     included in the ad request.         source for the user.
-
-  -----------------------------------------------------------------------
+| Identity Source             | Description                                                                                      | Consideration                                                                         |
+|:--------------------------- |:------------------------------------------------------------------------------------------------ |:------------------------------------------------------------------------------------- |
+| TV Device IDs               | Identifiers for advertising across Over-the-top (OTT)/ Connected TV (CTV) devices and platforms. | These IDs may be referenced as a custom identity source for the user.                 |
+| MAIDs                       | Google Advertising ID (GAID) or Apple ID for Advertisers (IDFA).                                 | These IDs are generally captured in the GAID and IDFA source namespaces for the user. |
+| Publisher Provided User Ids | This is generally a first-party, cross-device identifier that is included in the ad request.     | This may be referenced as a custom identity source for the user.                      |
 
 ## Setting Up The Destinations
 
