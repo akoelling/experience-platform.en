@@ -44,7 +44,7 @@ export](#exported-data-validate-data-export)
 
 ## Overview
 
-The Magnite---Adobe Experience Platform integration offers Magnite
+The Magnite-Adobe Experience Platform integration offers Magnite
 Streaming clients Real-Time and Daily Destinations to map and export
 audiences for targeting and activation on the Magnite Streaming
 platform. The following provides sample use cases to help you better
@@ -70,23 +70,11 @@ in real time to Magnite Streaming for advertising targeting.
 Post-processing, segments are available for targeting deals created in
 Magnite. **Please note:**
 
-- The real-time destination system will attempt to send the events
-  
-  > with a p95 of \<10 mins after a Profile segmentation/Update event.
-  > This means that 95% of the time, profile segment updates will be
-  > delivered to Magnite Streaming in under 10 min. The actual receipt
-  > and processing of the events within Magnite Streaming depends on
-  > the shared data volume.
+- The real-time destination system will attempt to send the events with a p95 of \<10 mins after a Profile segmentation/Update event. This means that 95% of the time, profile segment updates will be delivered to Magnite Streaming in under 10 min. The actual receipt and processing of the events within Magnite Streaming depends on the shared data volume.
 
-- Post-ingest, segments are expected to appear in Magnite Streaming
-  
-  > within a few minutes and can be applied to a deal. The ad server
-  > may take up to an hour to acknowledge targeting updates.
+- Post-ingest, segments are expected to appear in Magnite Streaming within a few minutes and can be applied to a deal. The ad server may take up to an hour to acknowledge targeting updates.
 
-- Audiences shared to Magnite Streaming using the real-time
-  
-  > destination will also need to be shared using the Magnite
-  > Streaming Daily destination.
+- Audiences shared to Magnite Streaming using the real-time destination will also need to be shared using the Magnite Streaming Daily destination.
 
 For more information on which destination is right for you, please
 contact your Magnite Streaming account representative for more
@@ -137,11 +125,11 @@ To configure details for the destination, fill in the required and
 optional fields below. An asterisk next to a field in the UI indicates
 that the field is required. You can then proceed by clicking Next.
 
-> Name: A name by which you will recognize this destination in the
-> future.
-> 
-> Description: A description that will help you identify this
-> destination in the future.
+- **Name:** A name by which you will recognize this destination in the
+  future.
+
+- **Description:** A description that will help you identify this
+  destination in the future.
 
 ![destination configuration auth fields filled](../../assets/catalog/advertising/magnite/destination-config-auth-filled.png)
 
@@ -168,7 +156,7 @@ needed.
 
 #### Step 1: Select your new Destination and click Next.
 
-![select the destination to activate audiences too](assets/catalog/advertising/magnite/destination-active-audience-select-destination.png)
+![select the destination to activate audiences too](../../assets/catalog/advertising/magnite/destination-active-audience-select-destination.png)
 
 #### Step 2: Select any audiences you want to activate, then click Next.
 
@@ -180,18 +168,13 @@ needed.
 
 **Real-time Destination Notes**:
 
-- You may have multiple source attributes/namespaces that could
-  
-  > represent a Device ID, so map as many as you need.
+- You may have multiple source attributes/namespaces that could represent a Device ID, so map as many as you need.
 
 - A new mapping can be added using the Add new mapping button.
 
 **Daily Destination Note:**
 
-- If you plan to send multiple ID types using the daily, file-based
-  
-  > destination, you can only send one ID per-destination
-  > configuration. A new destination is required for each ID.
+- If you plan to send multiple ID types using the daily, file-based destination, you can only send one ID per-destination configuration. A new destination is required for each ID.
 
 In this example using the real-time destination, we're mapping any rows
 that contain a generic deviceId source identifier to the Magnite
@@ -204,22 +187,11 @@ and a Mapping ID for each audience.
 
 **Mapping ID Notes:**
 
-- The Mapping ID field should be used when an audience has a
-  
-  > pre-existing Segment ID previously known to Magnite.
+- The Mapping ID field should be used when an audience has a pre-existing Segment ID previously known to Magnite.
 
-- **Real-Time Destination:** To add a Mapping ID to an audience, click
-  
-  > each audience row individually and enter data in the right-hand
-  > column (see image above). If you do not want to add a Mapping ID,
-  > please enter NONE into the Mapping ID field. This is because the
-  > Mapping ID is a mandatory field within the Adobe system, despite
-  > technically being optional for this particular use case.
+- **Real-Time Destination:** To add a Mapping ID to an audience, click each audience row individually and enter data in the right-hand column (see image above). If you do not want to add a Mapping ID, please enter NONE into the Mapping ID field. This is because the Mapping ID is a mandatory field within the Adobe system, despite technically being optional for this particular use case.
 
-- **Daily Destination:** When configuring the filename, please include
-  
-  > the Mapping ID via the Custom Text option to add it to an
-  > audience. The Mapping ID should be added as "\_\[MAGNITEID\]."
+- **Daily Destination:** When configuring the filename, please include the Mapping ID via the Custom Text option to add it to an audience. The Mapping ID should be added as "\_\[MAGNITEID\]."
 
 Once these configurations are applied, click Next.
 
