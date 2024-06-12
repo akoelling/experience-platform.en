@@ -4,9 +4,9 @@
 
 [Use Cases](#use-cases)
 
- &ensp;[The Magnite-Streaming Daily Destination](#the-magnite-streaming-daily-destination)
- 
-&ensp;[The Magnite-Streaming Real-Time Destination](#the-magnite-streaming-real-time-destination)
+ &ensp;&ensp;[The Magnite-Streaming Daily Destination](#the-magnite-streaming-daily-destination)
+
+&ensp;&ensp;[The Magnite-Streaming Real-Time Destination](#the-magnite-streaming-real-time-destination)
 
 [Prerequisites](#prerequisites)
 
@@ -15,19 +15,19 @@
 [Setting Up The
 Destinations](#setting-up-the-destinations)
 
-&ensp;[Authenticate to destination](#authenticate-to-destination)
+&ensp;&ensp;[Authenticate to destination](#authenticate-to-destination)
 
-&ensp;[Fill in destination details](#fill-in-destination-details)
+&ensp;&ensp;[Fill in destination details](#fill-in-destination-details)
 
-&ensp;[Activate audiences to this destination](#activate-audiences-to-the-destination)
+&ensp;&ensp;[Activate audiences to this destination](#activate-audiences-to-the-destination)
 
-&ensp;&ensp;[Step 1: Select your new Destination and click Next.](#step-1-select-your-new-destination-and-click-next.)
+&ensp;&ensp;&ensp;&ensp;[Step 1: Select your new Destination and click Next.](#step-1-select-your-new-destination-and-click-next.)
 
-&ensp;&ensp;[Step 2: Select any audiences you want to activate, then click Next.](#step-2-select-any-audiences-you-want-to-activate-then-click-next.) 
+&ensp;&ensp;&ensp;&ensp;[Step 2: Select any audiences you want to activate, then click Next.](#step-2-select-any-audiences-you-want-to-activate-then-click-next.) 
 
-&ensp;&ensp;[Step 3: The next step is mapping source identifiers to the Magnite device_id identifier.](#step-3-the-next-step-is-mapping-source-identifiers-to-the-magnite-device_id-identifier.)
+&ensp;&ensp;&ensp;&ensp;[Step 3: The next step is mapping source identifiers to the Magnite device_id identifier.](#step-3-the-next-step-is-mapping-source-identifiers-to-the-magnite-device_id-identifier.)
 
-&ensp;&ensp;[Step 4: Confirm the Destination activation Configuration.](#step-4-confirm-the-destination-activation-configuration.)
+&ensp;&ensp;&ensp;&ensp;[Step 4: Confirm the Destination activation Configuration.](#step-4-confirm-the-destination-activation-configuration.)
 
 [Exported data / Validate data
 export](#exported-data-validate-data-export)
