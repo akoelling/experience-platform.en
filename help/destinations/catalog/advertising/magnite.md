@@ -21,16 +21,16 @@ Destinations](#setting-up-the-destinations)
 
 &ensp;&ensp;[Activate audiences to this destination](#activate-audiences-to-the-destination)
 
-&ensp;&ensp;&ensp;&ensp;[Step 1: Select your new Destination and click Next.](#step-1-select-your-new-destination-and-click-next.)
+&ensp;&ensp;&ensp;&ensp;[Step 1: Select your new Destination and click Next.](#step-1-select-your-new-destination-and-click-next)
 
-&ensp;&ensp;&ensp;&ensp;[Step 2: Select any audiences you want to activate, then click Next.](#step-2-select-any-audiences-you-want-to-activate-then-click-next.) 
+&ensp;&ensp;&ensp;&ensp;[Step 2: Select any audiences you want to activate, then click Next.](#step-2-select-any-audiences-you-want-to-activate-then-click-next) 
 
-&ensp;&ensp;&ensp;&ensp;[Step 3: The next step is mapping source identifiers to the Magnite device_id identifier.](#step-3-the-next-step-is-mapping-source-identifiers-to-the-magnite-device_id-identifier.)
+&ensp;&ensp;&ensp;&ensp;[Step 3: The next step is mapping source identifiers to the Magnite device_id identifier.](#step-3-the-next-step-is-mapping-source-identifiers-to-the-magnite-device_id-identifier)
 
-&ensp;&ensp;&ensp;&ensp;[Step 4: Confirm the Destination activation Configuration.](#step-4-confirm-the-destination-activation-configuration.)
+&ensp;&ensp;&ensp;&ensp;[Step 4: Confirm the Destination activation Configuration.](#step-4-confirm-the-destination-activation-configuration)
 
 [Exported data / Validate data
-export](#exported-data-validate-data-export)
+export](#exported-data--validate-data-export)
 
 ## Overview
 
