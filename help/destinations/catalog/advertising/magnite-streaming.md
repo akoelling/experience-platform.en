@@ -72,24 +72,31 @@ To connect to this destination, follow the steps described in the [destination c
 
 ### Authenticate to destination {#authenticate}
 
+Locate the Magnite Streaming destinations in the Adobe Experience catalog. Click the additional options button (\...) and then configure the destination.
+
 To authenticate to the destination, fill in the required fields and select **[!UICONTROL Connect to destination]**.
 
-![Add a link here to one or more sample screenshots that show users how to authenticate to your destination](/help/destinations/destination-sdk/docs-framework/assets/authenticate-destination.png)
+![destination configuration auth fields unfilled](../../assets/catalog/advertising/magnite/destination-realtime-config-auth-unfilled.png)
 
+If you have an existing account, you can locate it by changing the Account type option to Existing account.
 * **[!UICONTROL Username]**: The username supplied to you by [!DNL Magnite].
 * **[!UICONTROL Password]**: The password supplied to you by [!DNL Magnite].
 
 ### Fill in destination details {#destination-details}
 
-*Add the fields that customers must fill in when configuring a new destination. These fields are destination-specific and depend on your configuration in Destination SDK. Your destination's fields may not be the same as the ones listed below. Please also include a screenshot similar to the sample screenshot shown below.*
-
 To configure details for the destination, fill in the required and optional fields below. An asterisk next to a field in the UI indicates that the field is required.
-
-![Add a link here to one or more sample screenshots that show users how to fill in details for your destination](/help/destinations/destination-sdk/docs-framework/assets/configure-destination-details.png)
 
 *  **[!UICONTROL Name]**: A name by which you will recognize this destination in the future.
 *  **[!UICONTROL Description]**: A description that will help you identify this destination in the future.
 *  **[!UICONTROL Name of your source partner]**: Your customer/company name. Only supported partners will be available for selection.
+
+![destination configuration auth fields filled](../../assets/catalog/advertising/magnite/destination-realtime-config-auth-filled.png)
+
+You can optionally select any relevant data governance policies. Data Export is generally used for the Magnite destinations.
+
+Once done, click the Create button.
+
+![Optional governance policy and enforcement actions](../../assets/catalog/advertising/magnite/destination-realtime-config-grouping-policy.png)
 
 ### Enable alerts {#enable-alerts}
 
@@ -106,144 +113,6 @@ When you are finished providing details for your destination connection, select 
 
 Read [Activate profiles and segments to streaming segment export destinations](/help/destinations/ui/activate-segment-streaming-destinations.md) for instructions on activating audience segments to this destination.
 
-### Map attributes and identities {#map}
-
-*Add information about supported mappings between source and target fields in the Mapping step of the activation workflow. Your destination might support exporting profile attributes, identity namespaces, or both. Some fields might be mandatory. Target attributes might be predefined or custom. Call out the important caveats and use examples, preferably with screenshots. Two examples of destination pages which you can use as reference are:*
-
-* *[Pega](https://experienceleague.adobe.com/docs/experience-platform/destinations/catalog/personalization/pega.html?lang=en#mapping-example)*
-* *[Medallia](https://experienceleague.adobe.com/docs/experience-platform/destinations/catalog/voice/medallia-connector.html?lang=en#map)*
-
-## Exported data / Validate data export {#exported-data}
-
-*Add a paragraph about how data is exported to your destination. This would help the customer make sure that they have correctly integrated with your destination. For example, you could provide a sample JSON like the one below. Or, you could provide screenshots and information from your destination's interface that show how customers should expect segments to be populating in the destination platform.*
-
-```
-{
-  "person": {
-    "email": "yourstruly@adobe.com"
-  },
-  "segmentMembership": {
-    "ups": {
-      "7841ba61-23c1-4bb3-a495-00d3g5fe1e93": {
-        "lastQualificationTime": "2020-05-25T21:24:39Z",
-        "status": "exited"
-      },
-      "59bd2fkd-3c48-4b18-bf56-4f5c5e6967ae": {
-        "lastQualificationTime": "2020-05-25T23:37:33Z",
-        "status": "existing"
-      }
-    }
-  },
-  "identityMap": {
-    "ecid": [
-      {
-        "id": "14575006536349286404619648085736425115"
-      },
-      {
-        "id": "66478888669296734530114754794777368480"
-      }
-    ],
-    "email_lc_sha256": [
-      {
-        "id": "655332b5fa2aea4498bf7a290cff017cb4"
-      },
-      {
-        "id": "66baf76ef9de8b42df8903f00e0e3dc0b7"
-      }
-    ]
-  }
-}
-
-```
-
-## Data usage and governance {#data-usage-governance}
-
-All [!DNL Adobe Experience Platform] destinations are compliant with data usage policies when handling your data. For detailed information on how [!DNL Adobe Experience Platform] enforces data governance, read the [Data Governance overview](/help/data-governance/home.md).
-
-## Additional resources {#additional-resources}
-
-*You can provide further links to your product documentation or any other resources that you consider important for the customer to be successful.*
-
-
-
-
-
-
-
-
-
-
-
-
-
-## Overview
-
-The Magnite-Adobe Experience Platform integration offers Magnite Streaming clients Real-Time and Daily Destinations to map and export audiences for targeting and activation on the Magnite Streaming platform. The following document provides sample use cases to help you better understand how and when the Real time destination should be used, as well as step-by-step instructions for destination configuration for the Real-time endpoint.
-
-Be advised that in order to properly integrate with the Magnite platform, the Magnite Batch destiniation should be used in addition to the Real-time Destination. Only setting up the Real-time Destiniation will result in a failed integration.  This document only covers the Real-time destination setup. Batch destination can be found [via this link](magnite-batch.md)
-
-### **The Magnite-Streaming: Real-Time Destination**
-
-This destination allows Magnite clients to deliver Adobe CDP audiences in real-time to Magnite Streaming for advertising targeting. Post-processing, segments are available for targeting deals created in Magnite. **Please note:**
-
-- The real-time destination system will attempt to send the events with a p95 of \<10 mins after a Profile segmentation/Update event. This means that 95% of the time, profile segment updates will be delivered to Magnite Streaming in under 10 min. The actual receipt and processing of the events within Magnite Streaming depends on the shared data volume.
-
-- Post-ingest, segments are expected to appear in Magnite Streaming within a few minutes and can be applied to a deal. The ad server may take up to an hour to acknowledge targeting updates.
-
-- Audiences shared to Magnite Streaming using the real-time destination will also need to be shared using the Magnite [Streaming Daily destination](magnite-batch.md).
-
-For more information on whether this Real-time destination is right for you, please contact your Magnite Streaming account representative.
-
-## Prerequisites
-
-To use the Magnite destinations in the Adobe Experience Platform, users must first have a Magnite Streaming account. If you have a Magnite Streaming account, please reach out to your account manager to gain access to the Magnite destinations.
-
-## Supported Identities
-
-Magnite Streaming destinations can receive the following identifier sources from the Adobe CDP. Please note all of the following identity sources can map to the Magnite device_id target identifier:
-
-| Identity Source             | Description                                                                                      | Consideration                                                                         |
-|:--------------------------- |:------------------------------------------------------------------------------------------------ |:------------------------------------------------------------------------------------- |
-| TV Device IDs               | Identifiers for advertising across Over-the-top (OTT)/ Connected TV (CTV) devices and platforms. | These IDs may be referenced as a custom identity source for the user.                 |
-| MAIDs                       | Google Advertising ID (GAID) or Apple ID for Advertisers (IDFA).                                 | These IDs are generally captured in the GAID and IDFA source namespaces for the user. |
-| Publisher Provided User Ids | This is generally a first-party, cross-device identifier that is included in the ad request.     | This may be referenced as a custom identity source for the user.                      |
-
-## Setting Up The Destinations
-
-Once your destination usage has been approved and Magnite has shared your credentials, please follow the below steps to authenticate, map, and share data.
-
-### **Authenticate to destination**
-
-Locate the Magnite Streaming destinations in the Adobe Experience catalog. Click the additional options button (\...) and then configure the destination.
-
-To authenticate to the destination, fill in the required fields and select Connect to the destination.
-
-![destination configuration auth fields unfilled](../../assets/catalog/advertising/magnite/destination-realtime-config-auth-unfilled.png)
-
-If you have an existing account, you can locate it by changing the Account type option to Existing account.
-
-### **Fill in destination details**
-
-To configure details for the destination, fill in the required and optional fields below. An asterisk next to a field in the UI indicates that the field is required. You can then proceed by clicking Next.
-
-- **Name:** A name by which you will recognize this destination in the
-  future.
-
-- **Description:** A description that will help you identify this
-  destination in the future.
-
-![destination configuration auth fields filled](../../assets/catalog/advertising/magnite/destination-realtime-config-auth-filled.png)
-
-You can optionally select any relevant data governance policies. Data Export is generally used for the Magnite destinations.
-
-Once done, click the Create button.
-
-![Optional governance policy and enforcement actions](../../assets/catalog/advertising/magnite/destination-realtime-config-grouping-policy.png)
-
-### 
-
-### **Activate audiences to the destination**
-
 Once the Destination has been created, you will be shown the audience activation flow. The following walks through how to activate audiences using the real-time destination.
 
 #### Step 1: Select your new Destination and click Next.
@@ -254,7 +123,9 @@ Once the Destination has been created, you will be shown the audience activation
 
 ![select the audiences to activate](../../assets/catalog/advertising/magnite/destination-realtime-active-audience-select-audience.png)
 
-#### Step 3: The next step is mapping source identifiers to the Magnite device_id identifier.
+### Map attributes and identities {#map}
+
+The next step is mapping source identifiers to the Magnite device_id identifier.
 
 ![map desired data fields to the device_id field](../../assets/catalog/advertising/magnite/destination-realtime-active-audience-field-mapping.png)
 
@@ -281,14 +152,14 @@ and a Mapping ID for each audience.
 
 Once these configurations are applied, click Next.
 
-#### Step 4: Confirm the Destination activation Configuration.
+#### Confirm the Destination activation Configuration.
 
-![](../../assets/catalog/advertising/magnite/destination-realtime-active-audience-review.png)
+`![](../../assets/catalog/advertising/magnite/destination-realtime-active-audience-review.png)
 
 In this step, confirm the Destination activation configuration and click
 Finish.
 
-## Exported data / Validate data export
+## Exported data / Validate data export {#exported-data}
 
 Once your audiences have been uploaded, you may validate your audiences
 have been created and uploaded correctly using the following steps:
