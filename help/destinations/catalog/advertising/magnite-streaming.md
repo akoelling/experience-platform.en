@@ -1,6 +1,6 @@
 ---
 title: Magnite Streaming Real-Time Destination connection
-description: Magnite is a ... TODO
+description: Magnite powers advertising that enables billions of people to stay informed, entertained, and connected via our DV+, Streaming, SpringServe, and ClearLine platforms.
 ---
 
 # Magnite Streaming: Real-Time Destination connection
@@ -13,7 +13,7 @@ Be advised that in order to properly integrate with the Magnite platform, the Ma
 
 >[!IMPORTANT]
 >
->The destination connector and documentation page are created and maintained by the [!DNL Magnite] team. For any inquiries or update requests, please contact them directly at *Insert link or email address where you can be reached for updates, for example `support@magnite.com`.* TODO
+>The destination connector and documentation page are created and maintained by the [!DNL Magnite] team. For any inquiries or update requests, please contact them directly at `adobe-tech@magnite.com`.
 
 ## Use cases {#use-cases}
 
@@ -27,7 +27,7 @@ This integration with Magnite allows advertisers to pass advertiser CDP audience
 ## Prerequisites {#prerequisites}
 
 To use the Magnite destinations in the Adobe Experience Platform, you must first have a Magnite Streaming account. If you have a [!DNL Magnite Streaming] account, please reach out to your [!DNL Magnite] account manager to be provided credentials to access [!DNL Magnite's] destinations.
-If you do not have a [!DNL Magnite Streaming] account, please reach out to something@magnite.com. TODO
+If you do not have a [!DNL Magnite Streaming] account, please reach out to adobe-tech@magnite.com
 
 ## Supported Identities
 
