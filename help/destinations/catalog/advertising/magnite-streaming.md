@@ -13,8 +13,7 @@ Be advised that in order to properly integrate with the Magnite platform, the Ma
 
 >[!IMPORTANT]
 >
-> TODO
->The destination connector and documentation page are created and maintained by the [!DNL Magnite] team. For any inquiries or update requests, please contact them directly at *Insert link or email address where you can be reached for updates, for example `support@magnite.com`.*
+>The destination connector and documentation page are created and maintained by the [!DNL Magnite] team. For any inquiries or update requests, please contact them directly at *Insert link or email address where you can be reached for updates, for example `support@magnite.com`.* TODO
 
 ## Use cases {#use-cases}
 
